@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="submit">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+      <label for="firstname">Firstname</label>
+      <input type="text" name="firstname" id="firstname" />
+      <label for="lastname">Lastname</label>
+      <input type="text" name="lastname" id="lastname" />
+      <label for="dateOfBirth">Date of Birth</label>
+      <input type="date" name="dateOfBirth" id="dateOfBirth" />
+      <label for="phone-number">Phone number</label>
+      <input
+        type="tel"
+        name="phone-number"
+        id="phone-number"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+      <br />
+      <select name="plans">
+        <option value="">Free Plan</option>
+        <optgroup label="Price select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </optgroup>
+      </select>
+      <span>
+        <label for="pro-plan">Pro Plan</label>
+        <input id="pro-plan" type="checkbox"
+      /></span>
+      <div>
+        <label for="card-number">Card Number</label>
+        <input id="card-number" type="text" />
+        <label for="cvc-num">CVC</label>
+        <input type="number" id="cvc-num" name="cvc-num" />
+        <label for="exp-date">Expiration Date</label>
+        <input type="date" id="exp-date" />
+        <label for="billing-address">Billing address</label>
+        <textarea
+          name="billing-address"
+          id="billing-address"
+          cols="20"
+          rows="5"
+        ></textarea>
+      </div>
+    </form>
+  </body>
+</html>
